@@ -129,3 +129,27 @@ body {
   display: inline-block;
   margin-top: 1rem;
 }
+.about, .video, .maps, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+  color: #3e2c28;
+}
+
+.about p, .contact p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.map-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
