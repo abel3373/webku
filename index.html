@@ -8,15 +8,16 @@
 </head>
 <body>
 
-  <!-- Navigation with hamburger menu -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Koppee</div>
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Kontak</a></li>
-      <li><a href="#">Tentang Kami</a></li>
+      <li><a href="#landingPage">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#maps">Lokasi</a></li>
+      <li><a href="#contact">Kontak</a></li>
     </ul>
   </nav>
 
@@ -36,6 +37,37 @@
       <button type="submit">Masuk</button>
     </form>
     <p><a href="#" onclick="backToLanding()">Kembali ke Beranda</a></p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>Tentang Koppee</h2>
+    <p>Koppee adalah kedai kopi modern dengan sentuhan klasik, menghadirkan cita rasa terbaik dari biji kopi pilihan. Temukan kenyamanan, inspirasi, dan kenangan dalam setiap cangkir.</p>
+  </section>
+
+  <!-- YouTube Video -->
+  <section class="video" id="video">
+    <h2>Video Koppee</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2Q0t6NBdTJM" title="Video Promo Koppee" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="maps" id="maps">
+    <h2>Temukan Kami</h2>
+    <p>Kunjungi Koppee di pusat kota Yogyakarta!</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9115116329637!2d110.3661990750087!3d-7.801382192221553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579b2f1e8e61%3A0x3ce5a7a5e48c6b50!2sTugu%20Yogyakarta!5e0!3m2!1sid!2sid!4v1716264920001!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Hubungi Kami</h2>
+    <p>Email: koppee@coffee.id</p>
+    <p>Instagram: @koppee.id</p>
+    <p>Telepon: +62 812 3456 7890</p>
   </section>
 
   <script src="script.js"></script>
