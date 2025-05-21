@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koppee - Coffee with Soul</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation with hamburger menu -->
+  <nav class="navbar">
+    <div class="logo">Koppee</div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Kontak</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+  <!-- Landing Page -->
+  <section class="landing" id="landingPage">
+    <h1>Selamat Datang di Koppee</h1>
+    <p>Kopi nikmat, desain menarik, dan pengalaman berkelas.</p>
+    <button onclick="showLogin()">Login</button>
+  </section>
+
+  <!-- Login Page -->
+  <section class="login" id="loginPage">
+    <h2>Masuk ke Koppee</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Masuk</button>
+    </form>
+    <p><a href="#" onclick="backToLanding()">Kembali ke Beranda</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
