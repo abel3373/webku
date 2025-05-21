@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f1ee;
+  color: #3e2c28;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3e2c28;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: #3e2c28;
+  position: absolute;
+  top: 60px;
+  right: 2rem;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.nav-links li {
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Landing Page */
+.landing {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing button {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: #c7a17a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Login Page */
+.login {
+  display: none;
+  background-color: #e9ded2;
+  height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 2rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login input {
+  padding: 0.8rem;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login button {
+  padding: 0.8rem 2rem;
+  background-color: #3e2c28;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.login a {
+  color: #3e2c28;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 1rem;
+}
